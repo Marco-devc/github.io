@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>verso la sostenibilita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pulsante hamburger -->
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="ed civica sito.html">Home</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenuto principale -->
+    <div class="main-content">
+        <header>
+            <h1>Aziende informatiche sostenibili e il rispetto per l’ambiente</h1>
+
+        </header>
+        <!-- Contenuto della pagina -->
+        <div class="container" style="background-color: #800020; margin-right: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Crescita del fotovoltaico: dati e numeri</h1>
+                Il fotovoltaico rappresenta oggi una delle fonti rinnovabili più sviluppate nel territorio ragusano. Con oltre 8.500 impianti installati e una potenza complessiva di 237 MW, la produzione annua di energia supera i 325 GWh, contribuendo in modo significativo alla copertura del fabbisogno elettrico locale. Gli impianti sono distribuiti tra settore residenziale, industriale, agricolo e terziario, con un’elevata efficienza media e una crescente attenzione verso sistemi di accumulo e soluzioni innovative.
+            </div>
+        </div>
+
+        <div class="container" style="background-color: #800020; margin-left: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Ricca IT Srl: cybersecurity e sostenibilità</h1>
+                Ricca IT Srl, azienda ragusana operante nel settore della cybersecurity e dei servizi IT, ha fatto della sostenibilità una delle sue priorità. Con un forte impegno per la riduzione del proprio impatto ambientale, Ricca IT ha implementato pratiche per ottimizzare l'efficienza energetica dei suoi sistemi e delle sue infrastrutture. L'azienda ha adottato soluzioni di virtualizzazione dei server, riducendo la necessità di hardware fisico e, di conseguenza, i consumi energetici. Inoltre, Ricca IT ha ottenuto certificazioni ambientali come la ISO 14001, che testimoniano l’impegno verso un approccio aziendale più ecologico. Questo impegno si riflette anche nelle politiche interne, che promuovono la riduzione dei rifiuti elettronici e incentivano il riciclo delle apparecchiature obsolete. </div>
+        </div>
+        
+        
+        <div class="container" style="background-color: #800020; margin-right: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Oasi Digitale: rete d'impresa tecnologica e green</h1>
+                Un’altra realtà interessante nella provincia di Ragusa è Oasi Digitale, una rete d’impresa che raccoglie 13 aziende locali impegnate nel settore informatico e tecnologico. Nata nel 2024, questa rete promuove l’innovazione digitale sostenibile, con particolare attenzione all'adozione di soluzioni a basso impatto ambientale. I membri della rete, come Argo Software* e Datamatic, utilizzano tecnologie avanzate per ridurre i consumi energetici e favorire l’efficienza. Oasi Digitale è inoltre attivamente coinvolta nella formazione professionale attraverso eventi come Hack Your Talent, che mira a sensibilizzare le nuove generazioni sull'importanza della sostenibilità nell'ambito digitale. Inoltre, promuove l’adozione di soluzioni cloud sostenibili che permettono alle aziende di ridurre il proprio impatto ambientale, evitando l’eccessivo ricorso a infrastrutture fisiche.    
+            </div>
+        </div>
+
+        <div class="container" style="background-color: #800020; margin-right: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>QS Quality Services Italia: certificazione per la sostenibilità ambientale</h1>
+                QS Quality Services Italia è un ente che offre certificazioni ambientali e di responsabilità sociale per le aziende, aiutandole a migliorare le loro politiche di sostenibilità. Sebbene non sia un'azienda informatica in senso stretto, il suo lavoro con le realtà aziendali locali, comprese quelle nel settore tecnologico, è fondamentale. QS supporta le aziende ragusane nell'adozione di modelli di business ecocompatibili attraverso la certificazione di qualità e l’introduzione di processi più green. In particolare, facilita l'adozione di tecnologie e pratiche che riducono le emissioni di carbonio, ottimizzano il consumo energetico e promuovono la responsabilità sociale d’impresa.  
+            </div>
+        </div>
+
+        <div class="container" style="background-color: #800020; margin-right: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Conclusioni</h1>
+                Le aziende informatiche della provincia di Ragusa, come Ricca IT, Oasi Digitale e QS Quality Services Italia, stanno dando un esempio concreto di come il settore tecnologico possa adottare politiche di sostenibilità ambientale. Queste realtà, impegnate nella riduzione del consumo energetico, nella virtualizzazione delle infrastrutture e nella promozione di soluzioni innovative, dimostrano che è possibile coniugare sviluppo tecnologico e rispetto per l’ambiente.    
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Oasi Digitale - Tutti i diritti riservati</p>
+        </footer>
+    </div>
+
+    <!-- Script per il menu hamburger -->
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+        
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            mainContent.classList.toggle('shifted');
+        });
+    </script>
+</body>
+</html> 

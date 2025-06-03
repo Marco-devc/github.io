@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>verso la sostenibilita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pulsante hamburger -->
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="ed civica sito.html">Home</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenuto principale -->
+    <div class="main-content">
+        <header>
+            <h1>Energia solare a Ragusa: un territorio che guarda al futuro</h1>
+
+        </header>
+        <!-- Contenuto della pagina -->
+        <div class="container" style="background-color: #800020; margin-right: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1> Oasi Digitale (Ragusa)</h1>
+                Chi è: È una rete d’imprese innovative formata da 13 aziende ragusane che operano nei settori dell’ICT, comunicazione e agritech.
+                Cosa fa per l’ambiente**: Promuove l’adozione di tecnologie a basso impatto ambientale, soluzioni cloud sostenibili e digitalizzazione responsabile. Favorisce anche la formazione e l’inclusione digitale con attenzione alla sostenibilità.
+                Progetti: Partecipa a eventi di innovazione ecologica, come Hack Your Talent, volto alla crescita di giovani talenti in ambito digitale e green.
+                Sede: Ragusa centro storico.
+                   
+            </div>
+        </div>
+
+        <div class="container" style="background-color: #800020; margin-left: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1> Ricca IT Srl (Ragusa)</h1>
+                Chi è: Azienda specializzata in cybersecurity, reti aziendali e sistemi IT.
+                Impegno ambientale: Utilizza infrastrutture virtualizzate, ottimizza le reti per ridurre i consumi energetici e ha ottenuto certificazioni ambientali come ISO 14001.
+                Approccio: Implementa soluzioni sostenibili nei data center, riduce l’uso di carta e RAEE nei processi interni.
+
+
+                 </div>
+        </div>
+        
+        
+        <div class="container" style="background-color: #800020; margin-right: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1> Greentech Mediterranean Innovation Hub</h1>
+                Cos'è: Polo tecnologico in costruzione a Ragusa, all’interno della ex sede della Banca d’Italia, co-finanziato dal PNRR.
+                Obiettivo: Diventare un centro di eccellenza per l’innovazione green e il trasferimento tecnologico, anche in ambito ICT.
+                Partnership: Università di Catania, Politecnico di Torino, Banca Agricola Popolare di Ragusa.
+                Focus ambientale**: Riqualificazione di un edificio pubblico con tecnologie a basso consumo, sviluppo di tecnologie smart per l’agricoltura e le reti intelligenti.
+
+
+                </div>
+        </div>
+
+        
+        <div class="container" style="background-color: #800020; margin-right: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1> Dati e diffusione</h1>
+                Energia prodotta da fonti rinnovabili in provincia di Ragusa (2023): oltre 325 GWh, una parte dei quali deriva da impianti fotovoltaici utilizzati anche in ambito IT (es. data center, aziende smart).
+                Produzione media da fotovoltaico in zona: circa 1.527 kWh per kWp installato.
+                Crescita delle aziende ICT green: +18% dal 2021 al 2024 in ambito locale, soprattutto microimprese che offrono servizi di rete e digitalizzazione alle PMI.
+
+                </div>
+        </div>
+
+        
+
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Oasi Digitale - Tutti i diritti riservati</p>
+        </footer>
+    </div>
+
+    <!-- Script per il menu hamburger -->
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+        
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            mainContent.classList.toggle('shifted');
+        });
+    </script>
+</body>
+</html> 

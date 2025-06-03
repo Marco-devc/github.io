@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Sfondo nero */
+    color: #FFD700; /* Testo dorato */
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a;
+    color: #FFD700;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Menu di navigazione */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 999;
+}
+
+nav a {
+    color: #FFD700;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Contenitore principale */
+.container {
+    padding-top: 100px; /* Spazio per il menu fisso */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sezione Intro */
+.section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    color: #FFD700;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.section h1, .section h2, .section p {
+    opacity: 0;
+    transform: translateY(50px);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.section h1 {
+    animation-name: fadeInUp;
+    animation-delay: 0.5s;
+}
+
+.section h2 {
+    animation-name: slideFromLeft;
+    animation-delay: 1s;
+}
+
+.section p {
+    animation-name: slideFromRight;
+    animation-delay: 1.5s;
+}
+
+/* Animazioni */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Cerchi con le scritte animate che entrano da sinistra e destra */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Spaziatura tra i cerchi */
+    margin-top: 50px; /* Aggiunto per distanziare i cerchi dal titolo */
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+.circle-text {
+    display: inline-block;
+    padding: 30px 40px;
+    border: 4px solid #C49B00; /* Colore dorato meno brillante */
+    border-radius: 50%;
+    font-size: 24px;
+    color: #F4F4F4; /* Testo bianco quarzo */
+    text-transform: uppercase;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    box-shadow: 0 0 10px 3px rgba(196, 155, 0, 0.3); /* Ombra più leggera */
+    position: relative;
+    background-color: #C49B00; /* Sfondo dorato più scuro */
+}
+
+/* Animazione che fa entrare i cerchi da sinistra e destra */
+.from-left {
+    animation-name: slideFromLeft;
+    animation-delay: 1s;
+    transform: translateX(-100vw); /* Partenza da fuori a sinistra */
+}
+
+.from-right {
+    animation-name: slideFromRight;
+    animation-delay: 1s;
+    transform: translateX(100vw); /* Partenza da fuori a destra */
+}
+
+@keyframes slideFromLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scritta centrale con animazione di ingresso dal nulla */
+.central-text {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInFromNothing 1s forwards;
+}
+
+@keyframes fadeInFromNothing {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Immagine centrata */
+.centered-image {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #FFD700;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+/* Stile per la sidebar */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color:#cbb994;
+    padding: 20px 0;
+    color: white;
+    z-index: 1000;
+}
+
+.sidebar-header {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu li:hover {
+    background-color: #34495e;
+}
+
+.sidebar-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Contenuto principale */
+.main-content {
+    margin-left: 230px;
+    padding: 20px;
+    text-align: left 50px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+}

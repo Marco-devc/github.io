@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>verso la sostenibilita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pulsante hamburger -->
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="ed civica sito.html">Home</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenuto principale -->
+    <div class="main-content">
+        <header>
+            <h1>Agenda 2030 Goals Related to Computer Science and Technology</h1>
+
+        </header>
+        <!-- Contenuto della pagina -->
+        <div class="container" style="background-color: #800020; margin-right: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Agenda 2030 Goals Related to Computer Science and Technology</h1>
+                The 2030 Agenda for Sustainable Development is a global plan by the United Nations that includes 17 Sustainable Development Goals (SDGs). Several of these goals are closely connected to computer science, technology companies, and computer components:
+            </div>
+        </div>
+
+        <div class="container" style="background-color: #800020; margin-left: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Goal 4 – Quality Education</h1>
+                Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.
+                Technology enables e-learning platforms, digital classrooms, and access to knowledge worldwide.
+            </div>
+        </div>
+        
+        
+        <div class="container" style="background-color: #800020; margin-right: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Goal 7 – Affordable and Clean Energy</h1>
+                Ensure access to affordable, reliable, sustainable, and modern energy for all.
+                Tech companies use clean energy in data centers and design energy-efficient hardware.
+            </div>
+        </div>
+        <div class="container" style="background-color: #800020; margin-left: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Goal 8 – Decent Work and Economic Growth></h1>
+                Promote sustained, inclusive, and sustainable economic growth, full and productive employment, and decent work for all.
+                The tech industry generates jobs in programming, IT, cybersecurity, and remote work.
+            </div>
+        </div>
+        <div class="container" style="background-color: #800020; margin-right: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Goal 9 – Industry, Innovation and Infrastructure</h1>
+                Build resilient infrastructure, promote sustainable industrialization, and foster innovation.
+                Computer science drives innovation in AI, robotics, smart systems, and digital infrastructure.
+
+            </div>
+        </div>
+
+        <div class="container" style="background-color: #800020; margin-left: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Goal 12 – Responsible Consumption and Production</h1>
+                Ensure sustainable consumption and production patterns.
+                Tech companies are encouraged to reduce e-waste, design eco-friendly devices, and promote recycling.
+            </div>
+        </div>
+        
+        
+        <div class="container" style="background-color: #800020; margin-right: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Goal 13 – Climate Action</h1>
+                Take urgent action to combat climate change and its impacts.
+                Technology helps monitor climate change through AI, satellite data, and environmental sensors.
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Oasi Digitale - Tutti i diritti riservati</p>
+        </footer>
+    </div>
+
+    <!-- Script per il menu hamburger -->
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+        
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            mainContent.classList.toggle('shifted');
+        });
+    </script>
+</body>
+</html> 

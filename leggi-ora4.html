@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>verso la sostenibilita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pulsante hamburger -->
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="ed civica sito.html">Home</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenuto principale -->
+    <div class="main-content">
+        <header>
+            <h1>Oasi Digitale – Rete d'impresa tecnologica e sostenibile</h1>
+
+        </header>
+        <!-- Contenuto della pagina -->
+        <div class="container" style="background-color: #800020; margin-right: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Oasi Digitale – Rete d'impresa tecnologica e sostenibile</h1>
+                    Oasi Digitale è una rete d'impresa nata nel 2024 a Ragusa, composta da 13 aziende locali che operano nei settori dell'informatica, comunicazione, tecnologia e agroalimentare. Le aziende, tra cui Argo Software, Datamatic, Elettrosystem, Ricca IT e NQ Italia, collaborano per trasformare Ragusa in un **hub tecnologico sostenibile. L’obiettivo è promuovere soluzioni digitali eco-friendly, riducendo l’impatto ambientale e valorizzando i talenti locali. Un esempio di iniziativa è “Hack Your Talent”, un evento dedicato alla formazione e crescita di giovani esperti in tecnologie verdi e sostenibili. L’iniziativa si inserisce in un contesto di crescente attenzione alla sostenibilità nel settore ICT, dove l'innovazione tecnologica viene coniugata con pratiche rispettose dell’ambiente. 
+                </div>
+        </div>
+
+        <div class="container" style="background-color: #800020; margin-left: 2%; width: 700px; height: 550px; border-radius: 25%; margin-top: 130px;" >
+            <div class="section">
+                <h1>Innovazione e sostenibilità: agrivoltaico e comunità energetiche</h1>
+                Il Greentech Mediterranean Innovation Hub è un progetto ambizioso finanziato dal PNRR, situato nell'ex sede della Banca d'Italia a Ragusa. L’hub punta a diventare uno dei principali poli italiani per l’innovazione sostenibile, con un focus su tecnologie green e agritech. Il progetto coinvolge partner di rilievo come l’Università di Catania, il Politecnico di Torino e la Banca Agricola Popolare di Ragusa. L'obiettivo è sviluppare soluzioni innovative che promuovano la sostenibilità, sia dal punto di vista ambientale che economico, favorendo la ricerca, la formazione e la creazione di opportunità per i giovani. L'iniziativa mira anche alla valorizzazione del patrimonio culturale e allo sviluppo di tecnologie avanzate per l'agricoltura sostenibile.  
+            </div>
+        </div>
+        
+        
+        <
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Oasi Digitale - Tutti i diritti riservati</p>
+        </footer>
+    </div>
+
+    <!-- Script per il menu hamburger -->
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+        
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            mainContent.classList.toggle('shifted');
+        });
+    </script>
+</body>
+</html> 
